@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <style>
+        * {
+          box-sizing: border-box;
+        
+        }
+        
+      html {
+          
+          background-size: cover;
+          
+        }  
+
+        body {
+          margin: 0;
+          background-color: rgba(242, 247, 247, 0.813); 
+          color: rgba(12, 11, 10, 0.938);
+        }
+        .navbar{
+          overflow: hidden;
+          background-color: rgb(55, 51, 51);
+          position: fixed;
+          margin: 0px 0px 10px 0px;
+          width: 100%;
+          padding: 10px;
+          
+        }
+      
+        .navbar li button{
+          background-color: rgb(234, 241, 241);
+          width: 100px;
+          height: 40px;
+          border-radius: 15px;
+          border: none;
+          box-shadow: 1px 1px 3px lightblue;
+        }
+        .navbar li {
+          display: inline;
+        }
+          
+        
+        a:link{
+          text-decoration: none;
+
+      }
+      
+        a:hover{
+          text-decoration: underline;
+      }
+        .header {
+          background-color: #faf9f9;
+          margin: 0px 0px 0px 0px;
+          padding: 100px 0px 10px 0px;
+          text-align: center;
+          animation-name:header ;
+          animation-duration: 6s;
+        }
+        
+        img{
+            border-radius:50%;
+            box-shadow: 0px 0px 50px 0px;
+        }
+
+        
+        @keyframes header{
+          from {background-color: #faf9f9;}
+          to {background-color: rgb(192, 215, 221);}
+        }
+      
+      
+        
+        /* Create three equal columns  */
+        .column {
+          float: left;
+          width: 33.33%;
+          padding: 15px;
+          
+        }
+        
+        /*  floats  columns */
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+      
+
+        /* Responsive layout  */
+        @media screen and (max-width:600px) {
+          .column {
+            width: 100%;
+          }
+          body{
+            margin: 0%;
+          }
+        }
+        </style>
+</head>
+<body>
+  <nav class="navbar">
+    <ul>
+      <li><button><a href="./index.html">Home</a></button></li>
+      <li><button><a href="./friends.html">Friends</a></button></li>
+    </ul>
+  </nav>
+  
+    <div class="header">
+        <img src="./photo/67908.jpg" alt="photo" width="150" height="150">
+        <h1 >Natkorn Donkasem</h1>
+        <h1>(Cha)</h1>
+        
+
+    </div>
+      
+      <div class="row">
+        <div class="column">
+          <h2>PROFESSIONAL SUMMARY</h2>
+          <p>Experienced Credit Analyst skilled in risk analysis for all types of banks and other lending institutions. Proven experience in assessment of creditworthiness of client companies. Wide background in financial information analysis including cash flow records and management accounts. Strong current knowledge of compliance and legal issues involved in credit approval.</p>
+          <br> 
+          <h2>QUALIFICATION</h2>
+          <ul>
+              <li>Ability to work in a fast-paced environment to set deadlines.</li>
+              <li>Good negotiation and interpersonal skills.</li>
+              <li>Strong organizational and analytical skills.</li>
+              <li>Excellent oral and written correspondence with an exceptional attention to detail.</li>
+              <li>Highly organised with a creative flair for project work.</li>
+              <li>Enthusiastic self-starter who contributes well to the team.</li>
+          </ul>
+        </div>
+        <div class="column">
+          <h2>CAREER SUMMARY</h2>
+          <h4>Credit Analyst at Government Savings Bank (2010 - Present)</h4>
+          <ul>
+              <li>Effectively assessed credit risk and (current and potential) client viability, analyzing financial statements and cash flow of customers.</li>
+              <li>Performed (quantitative and qualitative) analysis of requests for loans and lines of credit.</li>
+              <li>Provided customer service support and professional financial guidance.</li>
+              <li>Prepared written credit-approvals and denials.</li>
+          </ul>
+          <h5>Additional performances</h5>
+          <ul>
+              <li>Fostered productive relationships with both internal and external clients.</li>
+              <li>Maintained effective liaisons with in-company department members: account managers and product specialists.</li>
+              <li>Initiated changes in credit policies  Ensured policies and procedures accorded with department&comma;s standards.</li>
+          </ul>
+        </div>
+        
+        
+        <div class="column">
+          <h2 >EDUCATION</h2>
+          <h4>Ramkhamheang University </h4>
+          <ul>
+              <li>Bachelor of Economics in Quantitative Economics </li>
+          </ul>
+          <br>
+          <h2>CERTIFICATE</h2>
+          <UL>
+              <li>Investment Consultant Single License (IC Single License) form The Securities and Exchange Commission, Thailand </li>
+              <li>Non-life insurance broker license and Life insurance broker license form Office of Insurance Commission</li>
+
+          </UL>
+          
+          
+        </div>
+        
+      </div>
+    <div class="row">
+        <div class="column">
+            <h2>How to reach me</h2>
+            <ul>
+                <li>Mobile Phon Number is 0825539824</li>
+                <li>Email  is natkornd@gmail.com</li>
+                <li>LineID is 0813819635 </li>
+                <li>Address is  234 anywhere street, anyprovice </li>
+                
+            </ul>
+        </div>
+
+        <div class="column">
+            <h2>Character References</h2>
+            <h5>Sirima Choksampan</h5>
+            <ul>
+              <li>Assistant Manager</li>
+              <li>Call : 0xxxxxxxx # xxxxxx</li>
+            </ul> 
+        </div>
+    
+    
+      <div class="column">
+        <h2>Skills</h2>
+        <ul>
+            <li>Good command of Written and Spoken English</li>
+            <li>Proficient in Microsoft Word, Excel, Powerpoint, PowerBI</li>
+            <li>Coding Languages: JavaScript,
+              HTML/CSS, Python</li>
+        </ul>
+      </div>
+    </div>  
+    
+
+
+
+
+  </body>
+</html>

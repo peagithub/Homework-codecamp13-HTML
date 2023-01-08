@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>booking form</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .form-main {
+            margin: 30px 0px 0px 0px;
+        }   
+        .form-main > h1{
+            text-align: center;
+            
+        }
+        .form-container{
+            margin: -30px 0px 0px 0px;
+            background-color: bisque;
+            width: 50%;
+            height: 25em;
+            transform: translate(50%, 20%);
+            padding: 20px 20px 10px 10px;
+            border-radius: 20px;
+        }
+        .form-select-flax {
+            display: flex;
+            gap: 10px;
+            margin: 10px 20px 15px 50px;
+        }
+            
+        .form-select-flax > div {
+            width: 50%;
+        }
+
+        .form-select-label {
+            color: #536387;
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 24px;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .form-select-input {
+            text-align: left;
+            width: 100%;
+            padding: 13px 22px;
+            border-radius: 5px;
+            border: 1px solid #dde3ec;
+            background: #ffffff;
+            font-weight: 300;
+            font-size: 16px;
+            color: #536387;
+            outline: none;
+            resize: none;
+        }
+        .form-select-number {
+            text-align: left;
+            width: 100%;
+            padding: 13px 22px;
+            margin-right: 10%;
+            border-radius: 5px;
+            border: 1px solid #dde3ec;
+            background: #ffffff;
+            font-weight: 300;
+            font-size: 16px;
+            color: #536387;
+            outline: none;
+            resize: none;
+        }
+
+        .form-select-flax .form-select-number{
+            width: 100%;
+            padding-right: 0%;
+            margin: 0px 10px 10px 0px;
+        }
+        .form-search{
+            width: 20%;
+            height: 45px;
+            border-radius: 10px;
+            background-color: rgb(243, 113, 14);
+            border-color: rgb(243, 113, 14);
+            font-size: 16px;
+            font-weight: bold;
+            color: #536387;
+        }
+            
+    </style>
+            
+</head>
+<body>
+    <div class="form-main">
+        <h1>Booking Form</h1>
+        <form action="#" class="form-container">
+            <div class="form-select-flax">
+                <div>
+                    <label for="flying from" class="form-select-label">Flying form</label>
+                    <select name="flying-from"  class="form-select-input ">
+                        <option value=""disabled selected>Choose City</option>
+                        <option value="AmsterdamNetherlands">Amsterdam,Netherlands</option>
+                        <option value="AthensGreece">Athens,Greece</option>
+                        <option value="BangkokThailand">Bangkok,Thailand</option>
+                        <option value="IstanbulTurkey">Istanbul,Turkey</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="flying to" class="form-select-label">To</label>
+                    <select name="flying-from"  class="form-select-input ">
+                        <option value=""disabled selected>Choose City</option>
+                        <option value="Amsterdam">Amsterdam,Netherlands</option>
+                        <option value="Athens">Athens,Greece</option>
+                        <option value="Bangkok">Bangkok,Thailand</option>
+                        <option value="Istanbul">Istanbul,Turkey</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-select-flax">
+                <div>
+                    <label for="departing-date" class="form-select-label">Departing</label>
+                    <input type="date" id="departingdate" name="departingdate" class="form-select-input">
+                </div>
+                <div>
+                    <label for="returning-date" class="form-select-label">Returning</label>
+                    <input type="date" id="returningdate" name="returningdate" class="form-select-input">
+                </div>
+            </div>    
+            <div class="form-select-flax" >
+                <div>
+                    <label for="adultnumber" class="form-select-label">Adult</label>
+                    <input type="number" name="adultnumber"  min="0" max="10" class="form-select-number">
+                </div>
+                <div>
+                    <label for="childnumber" class="form-select-label">Child</label>
+                    <input type="number" name="childnumber"  min="0" max="10" class="form-select-number">
+                </div>
+                <div>
+                    <label for="infantnumber" class="form-select-label">Infant</label>
+                    <input type="number" name="infantnumber"  min="0" max="10" class="form-select-number">
+                </div>
+                <div>
+                    <label for="currency" class="form-select-label" style="color: rgb(240, 126, 44);">Currency</label>
+                    <select name="currency" class="form-select-number">
+                        <option value=""disabled selected>Choose Cerrency</option>
+                        <option value="AmsterdamCerrency">EUR</option>
+                        <option value="BangkokCerrency">THB</option>
+                        <option value="IstanbulCerrency">TRY</option>
+                    </select>
+                </div>
+                
+            </div>
+            <div class="form-select-flax">
+                <input type="submit" value="SEARCH" class="form-search" style="color: azure;" >
+            </div>
+
+        </form>
+        
+    </div>
+</body>
+</html>
+    
+
+                
+                
+
+
